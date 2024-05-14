@@ -3,8 +3,8 @@ spring:
     bootstrap-server: localhost:9092
     consumer:
       group-id: productService
-      key-deserializer: org.apache.kafka.common.serialization.StringDeSerializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeSerializer
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
 
 server:
   port: 8082
